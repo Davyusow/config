@@ -1,0 +1,125 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	"collaboration_panel": {
+		"button": false
+	},
+	"notification_panel": {
+		"button": true
+	},
+	"git_panel": {
+		"status_style": "icon",
+		"dock": "right",
+		"button": true
+	},
+	"use_system_window_tabs": false,
+	"bottom_dock_layout": "contained",
+	"preview_tabs": {
+		"enabled": false
+	},
+	"tab_bar": {
+		"show_nav_history_buttons": false,
+		"show": true
+	},
+	"debugger": {
+		"button": false
+	},
+	"search": {
+		"button": true
+	},
+	"image_viewer": {
+		"unit": "decimal"
+	},
+	"completions": {
+		"words": "fallback"
+	},
+	"show_whitespaces": "selection",
+	"indent_guides": {
+		"background_coloring": "indent_aware",
+		"coloring": "indent_aware",
+		"active_line_width": 1,
+		"line_width": 1
+	},
+	"relative_line_numbers": false,
+	"excerpt_context_lines": 2,
+	"expand_excerpt_lines": 5,
+	"buffer_line_height": "standard",
+	"hard_tabs": true,
+	"toolbar": {
+		"code_actions": true
+	},
+	"diagnostics": {
+		"button": false,
+		"inline": {
+			"padding": 4
+		}
+	},
+	"tabs": {
+		"show_close_button": "hover",
+		"activate_on_close": "neighbour",
+		"file_icons": true,
+		"git_status": true
+	},
+	"title_bar": {
+		"show_project_items": true,
+		"show_menus": false,
+		"show_sign_in": true,
+		"show_user_picture": true,
+		"show_onboarding_banner": true,
+		"show_branch_name": true,
+		"show_branch_icon": true
+	},
+	"terminal": {
+		"dock": "bottom",
+		"button": true
+	},
+	"status_bar": {
+		"cursor_position_button": false,
+		"active_language_button": true
+	},
+	"project_panel": {
+		"hide_hidden": false,
+		"scrollbar": {
+			"show": "auto"
+		},
+		"auto_reveal_entries": true,
+		"starts_open": true,
+		"indent_size": 16.0,
+		"git_status": true,
+		"folder_icons": true,
+		"file_icons": true,
+		"entry_spacing": "standard",
+		"dock": "left",
+		"button": true
+	},
+	"disable_ai": true,
+	"selection_highlight": true,
+	"icon_theme": {
+		"mode": "system",
+		"light": "Colored Zed Icons Theme Light",
+		"dark": "Colored Zed Icons Theme Dark"
+	},
+	"minimap": {
+		"show": "auto"
+	},
+	"inlay_hints": {
+		"show_background": true,
+		"enabled": true
+	},
+	"buffer_font_family": "FiraCode Nerd Font Mono",
+	"ui_font_family": ".ZedSans",
+	"base_keymap": "VSCode",
+	"ui_font_size": 16.0,
+	"buffer_font_size": 15,
+	"theme": {
+		"mode": "system",
+		"light": "Gruvbox Light",
+		"dark": "Gruvbox Dark Hard"
+	}
+}
