@@ -1,0 +1,4 @@
+jorgebucaran/fisher
+franciscolourenco/done
+joseluisq/gitnow@2.13.0
+ilancosman/tide@v6
