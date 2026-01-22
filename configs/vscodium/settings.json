@@ -1,9 +1,9 @@
 {
     "window.commandCenter": false,
     "workbench.colorTheme": "Gruvbox Light Hard",
-    "workbench.iconTheme": "eyecons",
+    "workbench.iconTheme": "charmed-icons",
     "eyecons.theme": "gruvbox-dark", //ou light
-    "eyecons.folderColor": "orange", //ou green
+    "eyecons.folderColor": "blue", //ou green
     "eyecons.hidesExplorerArrows": true,
     "diffEditor.ignoreTrimWhitespace": true,
     "terminal.integrated.allowMnemonics": true,
@@ -14,11 +14,20 @@
     "editor.fontFamily": "\"FiraCode Nerd Font Mono\"",
     "redhat.telemetry.enabled": true,
     "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Gruvbox Light Hard",
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "editor.minimap.autohide": "mouseover",
+    "notebook.variablesView": true,
+    "workbench.panel.showLabels": false,
+    "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+    "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
+    "[shellscript]": {
+        "editor.defaultFormatter": "mkhl.shfmt"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "wakatime.align": "right",
     "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
-    "workbench.preferredLightColorTheme": "Gruvbox Light Medium",
-    "editor.minimap.size": "fill",
-    "workbench.layoutControl.enabled": false,
-    "window.customTitleBarVisibility": "never",
-    "haskell.manageHLS": "GHCup"
+    "workbench.startupEditor": "none"
 }
-
