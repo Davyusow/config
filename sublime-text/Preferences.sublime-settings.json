@@ -1,101 +1,102 @@
 {
-  "ignored_packages": ["FileIcons", "Vintage"],
-  "theme": "gruvbox.sublime-theme",
-  //"dark_color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
-  //"light_color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).sublime-color-scheme"
-  "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.sublime-color-scheme",
-  "font_face": "FiraCode Nerd Font Mono",
-  "font_size": 12,
-  "font_options": ["cv06", "cv14", "cv30", "ss03", "ss05", "ss06", "ss08"], // i@
-  "highlight_line": true,
-  "caret_style": "phase",
-  "reveal_menu": true, // Considerando ainda
-  "themed_title_bar": false,
-  "highlight_modified_tabs": true,
-  "ui_scale": 1.0,
-  "index_files": true,
-  /*"themed_title_bar": false,*/
-  "save_on_focus_loss": true,
-  "draw_white_space": "selection",
-  "overlay_scroll_bars": "enabled",
-  "show_project_first": true,
-  "show_rel_path": true,
-  "show_full_path": false,
+	"ignored_packages":
+	[
+		"FileIcons",
+          "Vintage",
+     ],
+	"theme": "gruvbox.sublime-theme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.sublime-color-scheme",
+    "font_face": "FiraCode Nerd Font Mono",
+    "font_size": 11,
+    "font_options": ["cv06","cv14","cv30","ss03","ss05","ss06","ss08"], // i@
+    "highlight_line": true,
+    "caret_style": "phase",
+    "reveal_menu": true, // Considerando ainda
+    "themed_title_bar": false,
+    "highlight_modified_tabs": true,
+    "ui_scale": 1.0,
+    "index_files": true,
+    "save_on_focus_loss": true,
+    "draw_white_space": "selection",
+    "overlay_scroll_bars": "enabled",
+    "show_project_first": true,
+    "show_rel_path": true,
+    "show_full_path": false,
 
-  // Cor de destaque
-  "gruvbox_accent_red": true, //aqua, blue, green, orange, purple, red, yellow
+    // Cor de destaque
+    "gruvbox_accent_red": true, //aqua, blue, green, orange, purple, red, yellow
 
-  // Tamanho auto complete!
-  "gruvbox_autocomplete_cramped": true, //  v  2
-  // "gruvbox_autocomplete_compact": true,     //  |  4
-  // "gruvbox_autocomplete_comfortable": false,//  |  6 (Default)
-  // "gruvbox_autocomplete_cozy": false,   //  |  8
+    // Tamanho auto complete!
+    "gruvbox_autocomplete_cramped": true,      //  v  2
+    // "gruvbox_autocomplete_compact": true,     //  |  4
+    // "gruvbox_autocomplete_comfortable": false,//  |  6 (Default)
+    // "gruvbox_autocomplete_cozy": false,   //  |  8
 
-  // Borda do autocomplete
-  "gruvbox_autocomplete_border": true,
-  // "gruvbox_autocomplete_border_thick": false,
+    // Borda do autocomplete
+    "gruvbox_autocomplete_border": true,
+    // "gruvbox_autocomplete_border_thick": false,
 
-  // Espaço da linha sidebar
-  "gruvbox_sidebar_cozy": false,
-  "gruvbox_sidebar_comfortable": false,
-  "gruvbox_sidebar_compact": true,
-  "gruvbox_sidebar_cramped": false,
+    // Espaço da linha sidebar
+    "gruvbox_sidebar_cozy": false,
+    "gruvbox_sidebar_comfortable": false,
+    "gruvbox_sidebar_compact": true,
+    "gruvbox_sidebar_cramped": false,
 
-  // Font da side bar (10-16)
-  "gruvbox_sidebar_font_size_12": true,
+    // Font da side bar (10-16)
+    "gruvbox_sidebar_font_size_12": true,
 
-  // Espaço do command pallet (comfortable, compact, cozy, cramped)
-  "gruvbox_command_palette_cramped": true,
+    // Espaço do command pallet (comfortable, compact, cozy, cramped)
+    "gruvbox_command_palette_cramped": true,
 
-  // thick ou thickest também
-  "gruvbox_sideline_command_palette_row": true,
+    // thick ou thickest também
+    "gruvbox_sideline_command_palette_row": true,
 
-  // Tamanho dos botões da fonte (10-16)
-  // "gruvbox_buttons_font_size_10": true,
+    // Tamanho dos botões da fonte (10-16)
+    // "gruvbox_buttons_font_size_10": true,
 
-  // Bordas
-  "gruvbox_disable_borders": true, // Disable all borders
-  // "gruvbox_enable_pane_borders": true,                 // Enable borders between panes
-  // "gruvbox_enable_sidebar_border": true,               // Enable the sidebar border
-  // "gruvbox_enable_statusbar_border": true,             // Enable borders for the status bar
-  // "gruvbox_enable_tab_borders": true,                  // Enable borders for the tabs
-  // "gruvbox_disable_command_palette_row_border": true,
+    // Bordas
+    "gruvbox_disable_borders": true,                     // Disable all borders
+    // "gruvbox_enable_pane_borders": true,                 // Enable borders between panes
+    // "gruvbox_enable_sidebar_border": true,               // Enable the sidebar border
+    // "gruvbox_enable_statusbar_border": true,             // Enable borders for the status bar
+    // "gruvbox_enable_tab_borders": true,                  // Enable borders for the tabs
+    // "gruvbox_disable_command_palette_row_border": true,
 
-  // ìcones
-  "gruvbox_folder_icons_large": true,
+    // ìcones
+    "gruvbox_folder_icons_large": true,
 
-  // Tab
-  "gruvbox_tabs_xxs": true, //  pequeno
-  "gruvbox_tabs_xs": false, //  |  39
-  "gruvbox_tabs_s": false, //  |  45
-  "gruvbox_tabs_l": false, //  |  57
-  "gruvbox_tabs_xl": false, //  |  63
-  "gruvbox_tabs_xxl": false, //grande
+    // Tab
+    "gruvbox_tabs_xxs": true,  //  pequeno
+    "gruvbox_tabs_xs": false,   //  |  39
+    "gruvbox_tabs_s": false,    //  |  45
+    "gruvbox_tabs_l": false,    //  |  57
+    "gruvbox_tabs_xl": false,   //  |  63
+    "gruvbox_tabs_xxl": false, //grande
 
-  // Statubar
-  "gruvbox_statusbar_xxs": true, //  pequeno
-  "gruvbox_statusbar_xs": false, //  |  25
-  "gruvbox_statusbar_s": false, //  |  30
-  "gruvbox_statusbar_l": false, //  |  40
-  "gruvbox_statusbar_xl": false, //  |  45
-  "gruvbox_statusbar_xxl": false, // grande
+    // Statubar
+    "gruvbox_statusbar_xxs": true,  //  pequeno
+    "gruvbox_statusbar_xs": false,   //  |  25
+    "gruvbox_statusbar_s": false,    //  |  30
+    "gruvbox_statusbar_l": false,    //  |  40
+    "gruvbox_statusbar_xl": false,   //  |  45
+    "gruvbox_statusbar_xxl": false, // grande
 
-  "gruvbox_animate_icons": true,
+    "gruvbox_animate_icons": true,
 
-  // Extras
-  /*"gruvbox_animate_icons": true,*/ // Enable icon animations
-  "gruvbox_buttons_bold": true, // Enable bold button labels
-  "gruvbox_colored_tooltips": true, // Color the tooltip backgrounds with the current accent color
-  "gruvbox_disable_faded_file_icons": false, // Make file-type icons opaque
-  "gruvbox_disable_file_icons": false, // Disable the sidebar file icons
-  "gruvbox_disable_folder_icons": false, // Disable the sidebar folder icons
-  "gruvbox_disable_greyscale": false, // Use gruvbox colors instead of greyscale colors for certain text
-  "gruvbox_disable_panels_button": false, // Hide the panel-switching button
-  "gruvbox_enable_panel_close_button": false, // Enable the panel close button
-  "gruvbox_highlight_active_buttons": true, // Highlight selected buttons in the Find & Replace panel
-  "gruvbox_highlight_active_tree_row": true, // Highlight the active file in the sidebar tree
-  "gruvbox_less_contrast": false, // Use less contrasting colors in sidebar, tabs, etc.
-  "gruvbox_statusbar_bold": true, // Enable bold status bar labels
-  "gruvbox_tabs_autowidth": true, // Auto-size the tabs
-  "gruvbox_tabs_bold": false,
+    // Extras
+    /*"gruvbox_animate_icons": true,*/              // Enable icon animations
+    "gruvbox_buttons_bold": true,               // Enable bold button labels
+    "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
+    "gruvbox_disable_faded_file_icons": false,   // Make file-type icons opaque
+    "gruvbox_disable_file_icons": false,         // Disable the sidebar file icons
+    "gruvbox_disable_folder_icons": false,       // Disable the sidebar folder icons
+    "gruvbox_disable_greyscale": false,          // Use gruvbox colors instead of greyscale colors for certain text
+    "gruvbox_disable_panels_button": false,      // Hide the panel-switching button
+    "gruvbox_enable_panel_close_button": false,  // Enable the panel close button
+    "gruvbox_highlight_active_buttons": true,   // Highlight selected buttons in the Find & Replace panel
+    "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
+    "gruvbox_less_contrast": false,              // Use less contrasting colors in sidebar, tabs, etc.
+    "gruvbox_statusbar_bold": true,             // Enable bold status bar labels
+    "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
+    "gruvbox_tabs_bold": false,
 }

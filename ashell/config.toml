@@ -1,5 +1,15 @@
 log_level = "warn"
 position = "Top"
+language = "pt-BR"
+
+[osd]
+enabled = true
+timeout = 1500
+show_volume_percentage = false
+show_brightness_percentage = true
+
+[animations]
+enabled = true
 
 [[CustomModule]]
 name = "Rofi"
@@ -15,11 +25,31 @@ listen_cmd = "swaync-client -swb"
 icons.'dnd.*' = ""
 alert = ".*notification"
 
+[system_info]
+indicators = [ "Cpu" , "Memory", "Temperature" ]
+interval = 5
+
+[system_info.cpu]
+warn_threshold = 60
+alert_threshold = 80
+
+[system_info.memory]
+warn_threshold = 70
+alert_threshold = 85
+
+[system_info.disk]
+warn_threshold = 80
+alert_threshold = 90
+
+[system_info.temperature]
+warn_threshold = 60
+alert_threshold = 80
+sensor = "coretemp Package id 0"
+
 [modules]
-#left = [ ["Rofi", "Workspaces", "WindowTitle"] ]
-left = [ ["Rofi", "Workspaces"] ]
-center = [ ["CustomNotifications","Tempo", "MediaPlayer"] ]
-right = [ ["Tray", "Privacy", "Settings" ] ]
+left = [ ["Rofi", "Workspaces"] , ["SystemInfo" ], "WindowTitle"  ]
+center = [ ["Tempo"], [ "MediaPlayer" ] ]
+right = [ "CustomNotifications","Tray", "Privacy", "Settings" ]
 
 [settings]
 [[settings.CustomButton]]
@@ -31,32 +61,35 @@ listen_cmd = ""
 [[settings.CustomButton]]
 name = "Screen Recorder"
 icon = ""
-command = "~/.local/bin/screen-recorder.sh"
+command = "~/.local/bin/screen-recorder.sh toggle"
+status_command = "~/.local/bin/screen-recorder.sh status"
 listen_cmd = ""
 
 [[settings.CustomButton]]
-name = "Phone"
-icon = ""
-command = "~/.local/bin/kde-connect.sh"
-listen_cmd = ""
+name = "Read Mode"
+icon = ""
+command = "~/.local/bin/modo-leitura.sh"
+status_command = "~/.local/bin/modo-leitura-status.sh"
+listen_cmd = "[ -f ${XDG_RUNTIME_DIR:-/tmp}/hyprland_read_mode ] && echo 'on' || echo 'off'"
+
 
 [appearance]
-# Estilos: "Solid", "Islands" ou "Floating"
-style = "Solid" 
-font_name = 'FiraCode Nerd Font'
-scale_factor = 1.0
+# Estilos: "Solid", "Islands" ou "Gradient"
+style = "Islands"
+font_name = 'FiraCode Nerd Font mono'
+opacity = 1
 
 # Cores principais (direto no appearance)
-primary_color = "#689d6a"    # Amarelo Gruvbox
+primary_color = "#98971a"
 success_color = "#98971a"    # Verde Gruvbox
 text_color = "#ebdbb2"       # Creme claro
-workspace_colors = [ "#cc241d", "#98971a", "#458588", "#b16286" ]
+workspace_colors = [ "#fb4934", "#fb4934", "#fb4934", "#fb4934", "#fb4934", "#fb4934", "#fb4934", "#fb4934", "#fb4934", "#fb4934", "#fb4934" ]
 special_workspace_colors = [ "#fb4934", "#fe8019" ]
 
 [appearance.background_color]
 base = "#1d2021"    # Fundo principal
 weak = "#282828"    # Tons de cinza/superfície
-strong = "#fb4934"  # Destaque de seleção
+strong = "#928374"  # Destaque de seleção
 text = "#ebdbb2"
 
 [appearance.danger_color]
@@ -64,22 +97,30 @@ base = "#cc241d"    # Vermelho Gruvbox
 weak = "#fb4934"    # Vermelho claro
 
 [appearance.secondary_color]
-base = "#3c3836"    # Azul Gruvbox
+base = "#282828"
 
 # Seção de relógio/tempo para bater com o layout
 [tempo]
-tempo_format = "%a %d %b %R"
-weather_indicator = "IconAndTemperature"
+tempo_format = "%A, %d %B %R"
+clock_format = "%a %d %b %R"
+weather_indicator = "None"
+weather_location = { Coordinates = [0, 0] } # pus minha casa ai
+timeszones = [
+	"America/Recife",
+	"-03:00s"
+]
 
 [workspaces]
+workspace_names = ["α","β","γ","δ","ε","ζ","η","θ","ι","κ"]
 visibility_mode = "All"
 enable_workspace_filling = true
-max_workspaces = 4
+max_workspaces = 5
+#enable_virtual_desktops = true
 
-#[window_title]
-#mode = "InitialClass"
-#truncate_title_after_length = 75
+[window_title]
+mode = "Class"
+truncate_title_after_length = 50
 
 [media_player]
-indicator_format = "Icon"
+indicator_format = "IconAndTitle"
 max_title_length = 50
